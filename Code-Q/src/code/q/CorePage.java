@@ -18,22 +18,29 @@ public class CorePage extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jBtLetterA = new javax.swing.JButton();
+        jBtLetterB = new javax.swing.JButton();
+        jBtLetterC = new javax.swing.JButton();
+        jBtLetterD = new javax.swing.JButton();
+        jBtSubmit = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTextField1.setBackground(new java.awt.Color(255, 243, 246));
         jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 620, 60));
 
         jPanel1.setBackground(new java.awt.Color(57, 38, 101));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/q/logoto].png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -42,54 +49,69 @@ public class CorePage extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(640, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(646, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 700, 80));
 
-        jButton1.setBackground(new java.awt.Color(125, 178, 200));
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 290, -1));
-
-        jButton2.setBackground(new java.awt.Color(204, 204, 255));
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 290, -1));
-
-        jButton3.setBackground(new java.awt.Color(125, 178, 200));
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 290, -1));
-
-        jButton4.setBackground(new java.awt.Color(204, 204, 255));
-        jButton4.setText("jButton4");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 290, -1));
-
-        jButton5.setBackground(new java.awt.Color(57, 38, 101));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("jButton5");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jBtLetterA.setBackground(new java.awt.Color(125, 178, 200));
+        jBtLetterA.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
+        jBtLetterA.setText("A. AFJASFGAUGA");
+        jBtLetterA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jBtLetterAActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 110, 30));
+        getContentPane().add(jBtLetterA, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 290, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/q/Core Main Game Page Layout (1).jpg"))); // NOI18N
+        jBtLetterB.setBackground(new java.awt.Color(204, 204, 255));
+        jBtLetterB.setText("B. AFDASHGFLAF");
+        getContentPane().add(jBtLetterB, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 290, -1));
+
+        jBtLetterC.setBackground(new java.awt.Color(125, 178, 200));
+        jBtLetterC.setText("C. HASFJHASFGAF");
+        getContentPane().add(jBtLetterC, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 290, -1));
+
+        jBtLetterD.setBackground(new java.awt.Color(204, 204, 255));
+        jBtLetterD.setText("D. HASGHDAHFDH");
+        getContentPane().add(jBtLetterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 290, -1));
+
+        jBtSubmit.setBackground(new java.awt.Color(57, 38, 101));
+        jBtSubmit.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jBtSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        jBtSubmit.setText("SUBMIT");
+        jBtSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtSubmitActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 110, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/q/coreorigpage (1).jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jBtSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSubmitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_jBtSubmitActionPerformed
+
+    private void jBtLetterAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtLetterAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtLetterAActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,11 +186,11 @@ public class CorePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jBtLetterA;
+    private javax.swing.JButton jBtLetterB;
+    private javax.swing.JButton jBtLetterC;
+    private javax.swing.JButton jBtLetterD;
+    private javax.swing.JButton jBtSubmit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
