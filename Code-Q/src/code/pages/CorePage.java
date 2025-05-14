@@ -25,6 +25,7 @@ public class CorePage extends javax.swing.JFrame {
         jBtOptionC = new javax.swing.JButton();
         jBtOptionD = new javax.swing.JButton();
         jBtSubmit = new javax.swing.JButton();
+        jlbCopyrightInfringement = new javax.swing.JLabel();
         lblBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -112,6 +113,11 @@ public class CorePage extends javax.swing.JFrame {
         });
         getContentPane().add(jBtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 760, 170, 40));
 
+        jlbCopyrightInfringement.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jlbCopyrightInfringement.setForeground(new java.awt.Color(255, 255, 255));
+        jlbCopyrightInfringement.setText("©Copyright 2025 Sepsun | Code-Q");
+        getContentPane().add(jlbCopyrightInfringement, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 870, -1, 20));
+
         lblBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/bgCorePage.jpg"))); // NOI18N
         getContentPane().add(lblBackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1610, 880));
 
@@ -172,6 +178,7 @@ public class CorePage extends javax.swing.JFrame {
     private javax.swing.JButton jBtOptionC;
     private javax.swing.JButton jBtOptionD;
     private javax.swing.JButton jBtSubmit;
+    private javax.swing.JLabel jlbCopyrightInfringement;
     private javax.swing.JLabel jlbTitleIcon;
     private javax.swing.JLabel lblBackGround;
     private javax.swing.JLabel lblLogoIcon;
