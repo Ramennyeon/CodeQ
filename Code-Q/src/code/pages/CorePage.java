@@ -34,7 +34,7 @@ public class CorePage extends javax.swing.JFrame {
         pnlTopBar.setBackground(new java.awt.Color(57, 38, 101));
 
         lblLogoIcon.setForeground(new java.awt.Color(255, 255, 255));
-        lblLogoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/logo.png"))); // NOI18N
+        lblLogoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/LogoIcon.jpg"))); // NOI18N
 
         jlbTitleIcon.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jlbTitleIcon.setForeground(new java.awt.Color(255, 255, 255));
@@ -46,19 +46,22 @@ public class CorePage extends javax.swing.JFrame {
             pnlTopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlTopBarLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(lblLogoIcon)
+                .addComponent(lblLogoIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jlbTitleIcon)
-                .addContainerGap(1689, Short.MAX_VALUE))
+                .addContainerGap(1666, Short.MAX_VALUE))
         );
         pnlTopBarLayout.setVerticalGroup(
             pnlTopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTopBarLayout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
-                .addGroup(pnlTopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jlbTitleIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLogoIcon))
-                .addGap(34, 34, 34))
+            .addGroup(pnlTopBarLayout.createSequentialGroup()
+                .addContainerGap(32, Short.MAX_VALUE)
+                .addGroup(pnlTopBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTopBarLayout.createSequentialGroup()
+                        .addComponent(jlbTitleIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTopBarLayout.createSequentialGroup()
+                        .addComponent(lblLogoIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))))
         );
 
         getContentPane().add(pnlTopBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1920, 120));
@@ -69,7 +72,7 @@ public class CorePage extends javax.swing.JFrame {
         lblQuestion.setText("Question Holder");
         lblQuestion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         lblQuestion.setOpaque(true);
-        getContentPane().add(lblQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 1100, 100));
+        getContentPane().add(lblQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 1110, 110));
 
         jBtOptionA.setBackground(new java.awt.Color(125, 178, 200));
         jBtOptionA.setFont(new java.awt.Font("Trebuchet MS", 0, 12)); // NOI18N
@@ -79,7 +82,7 @@ public class CorePage extends javax.swing.JFrame {
                 jBtOptionAActionPerformed(evt);
             }
         });
-        getContentPane().add(jBtOptionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 440, 60));
+        getContentPane().add(jBtOptionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 480, 70));
 
         jBtOptionB.setBackground(new java.awt.Color(204, 204, 255));
         jBtOptionB.setText("Option Holder B");
@@ -88,15 +91,15 @@ public class CorePage extends javax.swing.JFrame {
                 jBtOptionBActionPerformed(evt);
             }
         });
-        getContentPane().add(jBtOptionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 430, 440, 60));
+        getContentPane().add(jBtOptionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 480, 70));
 
         jBtOptionC.setBackground(new java.awt.Color(125, 178, 200));
         jBtOptionC.setText("Option Holder C");
-        getContentPane().add(jBtOptionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 510, 440, 60));
+        getContentPane().add(jBtOptionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 480, 70));
 
         jBtOptionD.setBackground(new java.awt.Color(204, 204, 255));
         jBtOptionD.setText("Option Holder D");
-        getContentPane().add(jBtOptionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, 440, 60));
+        getContentPane().add(jBtOptionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 610, 480, 70));
 
         jBtSubmit.setBackground(new java.awt.Color(57, 38, 101));
         jBtSubmit.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -107,10 +110,10 @@ public class CorePage extends javax.swing.JFrame {
                 jBtSubmitActionPerformed(evt);
             }
         });
-        getContentPane().add(jBtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 700, 140, 40));
+        getContentPane().add(jBtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 760, 170, 40));
 
-        lblBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/Core Main Game Page Layout (1).jpg"))); // NOI18N
-        getContentPane().add(lblBackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1610, 900));
+        lblBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/bgCorePage.jpg"))); // NOI18N
+        getContentPane().add(lblBackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1610, 880));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
