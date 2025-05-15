@@ -113,7 +113,7 @@ public class CorePage extends javax.swing.JFrame {
         lblQuestion.setText("Question Holder");
         lblQuestion.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         lblQuestion.setOpaque(true);
-        getContentPane().add(lblQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 1410, 130));
+        getContentPane().add(lblQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 1410, 140));
 
         jBtOptionA.setBackground(new java.awt.Color(125, 178, 200));
         jBtOptionA.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
@@ -163,7 +163,7 @@ public class CorePage extends javax.swing.JFrame {
 
         jlbPixelGirlIcon.setForeground(new java.awt.Color(255, 255, 255));
         jlbPixelGirlIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/pixelgirl.png"))); // NOI18N
-        getContentPane().add(jlbPixelGirlIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1440, 750, 130, 150));
+        getContentPane().add(jlbPixelGirlIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 737, 140, -1));
 
         lblBackGround.setBackground(new java.awt.Color(0, 0, 255));
         lblBackGround.setForeground(new java.awt.Color(255, 255, 255));
