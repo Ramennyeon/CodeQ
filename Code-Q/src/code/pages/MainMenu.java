@@ -26,16 +26,70 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jbtLesson1 = new javax.swing.JButton();
+        jbtLesson2 = new javax.swing.JButton();
+        jbtLesson3 = new javax.swing.JButton();
+        jbtLesson4 = new javax.swing.JButton();
+        jbtLesson5 = new javax.swing.JButton();
+        jbtLesson6 = new javax.swing.JButton();
+        jbtLesson7 = new javax.swing.JButton();
+        jbtLesson8 = new javax.swing.JButton();
+        jbtLesson9 = new javax.swing.JButton();
         jlbBackgroundPhoto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jlbBackgroundPhoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/Main MenuHome Screen (1).jpg"))); // NOI18N
-        getContentPane().add(jlbBackgroundPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1615, 903));
+        jbtLesson1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/pages/lesson1 button.jpg"))); // NOI18N
+        getContentPane().add(jbtLesson1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 340, 70));
+
+        jbtLesson2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/pages/lesson 2button.jpg"))); // NOI18N
+        jbtLesson2.setText("jButton2");
+        jbtLesson2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtLesson2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jbtLesson2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 340, 70));
+
+        jbtLesson3.setBackground(new java.awt.Color(100, 136, 185));
+        jbtLesson3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 3 button.jpg"))); // NOI18N
+        jbtLesson3.setText("jButton3");
+        getContentPane().add(jbtLesson3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 340, 70));
+
+        jbtLesson4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Downloads\\lesson 4 button.jpg")); // NOI18N
+        jbtLesson4.setText("jButton4");
+        getContentPane().add(jbtLesson4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 340, 70));
+
+        jbtLesson5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 5 button.jpg"))); // NOI18N
+        jbtLesson5.setText("jButton5");
+        getContentPane().add(jbtLesson5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 480, 340, 70));
+
+        jbtLesson6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 6 button.jpg"))); // NOI18N
+        jbtLesson6.setText("jButton6");
+        getContentPane().add(jbtLesson6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 330, 70));
+
+        jbtLesson7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 7 button.jpg"))); // NOI18N
+        jbtLesson7.setText("jButton7");
+        getContentPane().add(jbtLesson7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, 330, 70));
+
+        jbtLesson8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 8 button.jpg"))); // NOI18N
+        jbtLesson8.setText("jButton8");
+        getContentPane().add(jbtLesson8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, 330, 70));
+
+        jbtLesson9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 9 button.jpg"))); // NOI18N
+        jbtLesson9.setText("jButton9");
+        getContentPane().add(jbtLesson9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, 330, 70));
+
+        jlbBackgroundPhoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/Main MenuHome Screen (2) (2).jpg"))); // NOI18N
+        getContentPane().add(jlbBackgroundPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbtLesson2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtLesson2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtLesson2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,6 +127,15 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jbtLesson1;
+    private javax.swing.JButton jbtLesson2;
+    private javax.swing.JButton jbtLesson3;
+    private javax.swing.JButton jbtLesson4;
+    private javax.swing.JButton jbtLesson5;
+    private javax.swing.JButton jbtLesson6;
+    private javax.swing.JButton jbtLesson7;
+    private javax.swing.JButton jbtLesson8;
+    private javax.swing.JButton jbtLesson9;
     private javax.swing.JLabel jlbBackgroundPhoto;
     // End of variables declaration//GEN-END:variables
 }
