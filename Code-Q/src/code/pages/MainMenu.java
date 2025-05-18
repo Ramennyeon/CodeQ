@@ -35,6 +35,7 @@ public class MainMenu extends javax.swing.JFrame {
         jbtLesson7 = new javax.swing.JButton();
         jbtLesson8 = new javax.swing.JButton();
         jbtLesson9 = new javax.swing.JButton();
+        jLbCopyrightInfringement = new javax.swing.JLabel();
         jlbBackgroundPhoto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -80,6 +81,11 @@ public class MainMenu extends javax.swing.JFrame {
         jbtLesson9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/lesson 9 button.jpg"))); // NOI18N
         jbtLesson9.setText("jButton9");
         getContentPane().add(jbtLesson9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, 330, 70));
+
+        jLbCopyrightInfringement.setFont(new java.awt.Font("Verdana", 2, 12)); // NOI18N
+        jLbCopyrightInfringement.setForeground(new java.awt.Color(255, 255, 255));
+        jLbCopyrightInfringement.setText("©Copyright 2025 Sepsun | Code-Q");
+        getContentPane().add(jLbCopyrightInfringement, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 590, -1, 20));
 
         jlbBackgroundPhoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/Main MenuHome Screen (2) (2).jpg"))); // NOI18N
         getContentPane().add(jlbBackgroundPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 620));
@@ -127,6 +133,7 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLbCopyrightInfringement;
     private javax.swing.JButton jbtLesson1;
     private javax.swing.JButton jbtLesson2;
     private javax.swing.JButton jbtLesson3;
