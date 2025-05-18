@@ -1,16 +1,57 @@
 
 package code.pages;
 import code.content.Questionnaire;
+import code.model.Option; 
+import code.model.Question; 
+import java.util.List;
 
 
 public class CorePage extends javax.swing.JFrame {
 
+   private int score = 0; 
+   private Option selectedOption = null;  
+   private int currentQuestionIndex = 0; 
+   private int lessonNumber;
    
-    public CorePage() {
+   public List<Question> QuestionList;
+ 
+    public CorePage(int lessonNumber) {
         initComponents();
+        this.lessonNumber = lessonNumber;
+       
+        QuestionList = Questionnaire.lessonQuestion(lessonNumber);
+        updateScoreDisplay();
+        loadQuestion(currentQuestionIndex);
         
     }
+      private void loadQuestion(int index) {
+        if (index < 0 || index >= QuestionList.size()) { 
+            endQuiz();
+            return;
+        }
+            Question q = QuestionList.get(index); 
+            lblQuestion.setText(q.getText());
+            jBtOptionA.setText(q.getOptions().get(0).getText());
+            jBtOptionB.setText(q.getOptions().get(1).getText());
+            jBtOptionC.setText(q.getOptions().get(2).getText());
+            jBtOptionD.setText(q.getOptions().get(3).getText());
+            selectedOption = null;
+        } 
 
+        private void endQuiz() {
+            lblQuestion.setText("Quiz Finished!"); 
+            jBtOptionA.setEnabled(false); 
+            jBtOptionB.setEnabled(false);
+            jBtOptionC.setEnabled(false);
+            jBtOptionD.setEnabled(false);
+            jBtSubmit.setEnabled(false);
+        }
+
+
+
+    private void selectOption(int optionIndex) {
+        selectedOption = QuestionList.get(currentQuestionIndex).getOptions().get(optionIndex); 
+    }
    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -138,11 +179,21 @@ public class CorePage extends javax.swing.JFrame {
         jBtOptionC.setBackground(new java.awt.Color(125, 178, 200));
         jBtOptionC.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jBtOptionC.setText("Option Holder C");
+        jBtOptionC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtOptionCActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBtOptionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 1160, 70));
 
         jBtOptionD.setBackground(new java.awt.Color(204, 204, 255));
         jBtOptionD.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jBtOptionD.setText("Option Holder D");
+        jBtOptionD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtOptionDActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBtOptionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 610, 1160, 70));
 
         jBtSubmit.setBackground(new java.awt.Color(57, 38, 101));
@@ -174,20 +225,32 @@ public class CorePage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSubmitActionPerformed
-        // TODO add your handling code here:
+        if (selectedOption != null && selectedOption.isCorrect()) { 
+        Question currentQuestion = QuestionList.get(currentQuestionIndex); 
+        score += currentQuestion.getPoints();
+        }
     }//GEN-LAST:event_jBtSubmitActionPerformed
-
-    private void jBtOptionAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtOptionAActionPerformed
-
+        
     private void jBtOptionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionBActionPerformed
-        // TODO add your handling code here:
+        selectOption(1);
     }//GEN-LAST:event_jBtOptionBActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jBtOptionAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionAActionPerformed
+        selectOption(0);
+    }//GEN-LAST:event_jBtOptionAActionPerformed
+
+    private void jBtOptionDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionDActionPerformed
+       selectOption(2);
+    }//GEN-LAST:event_jBtOptionDActionPerformed
+
+    private void jBtOptionCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionCActionPerformed
+        selectOption(3);
+    }//GEN-LAST:event_jBtOptionCActionPerformed
+   
+    private void updateScoreDisplay() {
+        jlbScore.setText("Score: " + score); 
+    }
+
     public static void main(String args[]) {
 
         /* Set the Nimbus look and feel */
@@ -216,8 +279,7 @@ public class CorePage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CorePage().setVisible(true);
-            }
+                            }
         });
     }
 
