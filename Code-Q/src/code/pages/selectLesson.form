@@ -27,10 +27,7 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jBtLesson1">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 1 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="  "/>
+        <Property name="text" type="java.lang.String" value="Lesson 1"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtLesson1ActionPerformed"/>
@@ -43,9 +40,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson2">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 2 button.jpg"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="jButton2"/>
       </Properties>
       <Events>
@@ -59,10 +53,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson3">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 3 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton3"/>
+        <Property name="text" type="java.lang.String" value="Lesson3"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -72,10 +63,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson4">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 4 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton4"/>
+        <Property name="text" type="java.lang.String" value="Lesson4"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -85,10 +73,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson5">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 5 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton5"/>
+        <Property name="text" type="java.lang.String" value="Lesson 5"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -98,10 +83,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson6">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 6 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton6"/>
+        <Property name="text" type="java.lang.String" value="Lesson6"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -111,10 +93,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson7">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 7 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton7"/>
+        <Property name="text" type="java.lang.String" value="Lesson7"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -124,10 +103,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson8">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 8 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton8"/>
+        <Property name="text" type="java.lang.String" value="Lesson8"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -137,10 +113,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtLesson9">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/lesson 9 button.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jButton9"/>
+        <Property name="text" type="java.lang.String" value="Lesson9"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -149,11 +122,9 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="jBtBackButton">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/final back button.png"/>
-        </Property>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtBackButtonActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="20" y="20" width="-1" height="60"/>
@@ -177,11 +148,6 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jlbBackgroundPhoto">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/code/img/bgMainMenuHomepage.jpg"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="1100" height="620"/>

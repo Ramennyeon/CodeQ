@@ -740,9 +740,9 @@ public class Questionnaire {
         Collections.shuffle(hardQuestion);
         
         List<Question> finalSet = new ArrayList<>();
-            finalSet.addAll(easyQuestion.subList(0, Math.min(2, easyQuestion.size())));
-            finalSet.addAll(mediumQuestion.subList(0, Math.min(2, mediumQuestion.size())));
-            finalSet.addAll(hardQuestion.subList(0, Math.min(2, hardQuestion.size())));
+            finalSet.addAll(easyQuestion.subList(0, Math.min(10, easyQuestion.size())));
+            finalSet.addAll(mediumQuestion.subList(0, Math.min(10, mediumQuestion.size())));
+            finalSet.addAll(hardQuestion.subList(0, Math.min(10, hardQuestion.size())));
             
         Collections.shuffle(finalSet);
         
