@@ -17,6 +17,7 @@ public class CorePage extends javax.swing.JFrame {
  
     public CorePage(int lessonNumber) {
         initComponents();
+        setLocationRelativeTo(null);
         this.lessonNumber = lessonNumber;
        
         QuestionList = Questionnaire.lessonQuestion(lessonNumber);
@@ -53,7 +54,7 @@ public class CorePage extends javax.swing.JFrame {
         selectedOption = QuestionList.get(currentQuestionIndex).getOptions().get(optionIndex); 
     }
    
-    @SuppressWarnings("unchecked")
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -80,7 +81,6 @@ public class CorePage extends javax.swing.JFrame {
         pnlTopBar.setBackground(new java.awt.Color(57, 38, 101));
 
         lblLogoIcon.setForeground(new java.awt.Color(255, 255, 255));
-        lblLogoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/LogoIcon.jpg"))); // NOI18N
 
         jlbTitleIcon.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jlbTitleIcon.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,7 +110,6 @@ public class CorePage extends javax.swing.JFrame {
         );
 
         jBtSettingsIcon.setBackground(new java.awt.Color(57, 38, 101));
-        jBtSettingsIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/setting.png"))); // NOI18N
         jBtSettingsIcon.setBorder(null);
 
         javax.swing.GroupLayout pnlTopBarLayout = new javax.swing.GroupLayout(pnlTopBar);
@@ -213,12 +212,10 @@ public class CorePage extends javax.swing.JFrame {
         getContentPane().add(jlbCopyrightInfringement, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 870, -1, 20));
 
         jlbPixelGirlIcon.setForeground(new java.awt.Color(255, 255, 255));
-        jlbPixelGirlIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/pixelgirl.png"))); // NOI18N
         getContentPane().add(jlbPixelGirlIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 737, 140, -1));
 
         lblBackGround.setBackground(new java.awt.Color(0, 0, 255));
         lblBackGround.setForeground(new java.awt.Color(255, 255, 255));
-        lblBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/code/img/bgCorePage.jpg"))); // NOI18N
         getContentPane().add(lblBackGround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1600, 880));
 
         pack();
@@ -229,6 +226,11 @@ public class CorePage extends javax.swing.JFrame {
         Question currentQuestion = QuestionList.get(currentQuestionIndex); 
         score += currentQuestion.getPoints();
         }
+        
+        updateScoreDisplay(); 
+
+        currentQuestionIndex++; 
+        loadQuestion(currentQuestionIndex);
     }//GEN-LAST:event_jBtSubmitActionPerformed
         
     private void jBtOptionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionBActionPerformed
