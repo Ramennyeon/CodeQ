@@ -690,47 +690,357 @@ public class Questionnaire {
             case 2 ->{
 
                 easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
-                    "What is the capital of CVSU",
+                    "What are control structures used for in Java",
                     Arrays.asList(
-                        new Option("Quiboloy", false),
-                        new Option("Robin Padilla", false),
-                        new Option("Manny Pacquio", false),
-                        new Option("Lito Eyara", true)
-                        ),
-                    "hard"
-                ));
-        
-                easyQuestion.add(new Question(
-                    "Which is a fruit?",
-                    Arrays.asList(
-                        new Option("Carrot", false),
-                        new Option("Banana", true),
-                        new Option("Broccoli", false),
-                        new Option("Potato", false)
+                        new Option("To store Data", false),
+                        new Option("To manage memory", false),
+                        new Option("To control flow of the program", true),
+                        new Option("To display input", false)
                         ),
                     "easy"
                 ));
-                easyQuestion.add(new Question(
-                    "What is the color of the sky?",
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following is NOT a type of control Logic",
                     Arrays.asList(
-                        new Option("Red", false),
-                        new Option("Blue", true),
-                        new Option("Green", false),
-                        new Option("Yellow", false)
+                        new Option("Sequence Logic", false),
+                        new Option("Selection Logic", true),
+                        new Option("Storage Logic", false),
+                        new Option("Iteration Logic", false)
                         ),
-                    "medium"
+                    "easy"
                 ));
-
-                easyQuestion.add(new Question(
-                    "Which one is a programming language?",
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is another name for Sequential Logic?",
                     Arrays.asList(
-                        new Option("Python", true),
-                        new Option("Snake", false),
-                        new Option("Lizard", false),
-                        new Option("Cobra", false)
+                        new Option("Looping Flow", false),
+                        new Option("Conditional Flow", false),
+                        new Option("Sequential Flow", true),
+                        new Option("Binary Flow", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the main characteristc of Sequential Logic?",
+                    Arrays.asList(
+                        new Option("Repeats instructions", false),
+                        new Option("Executes instructions one by one", false),
+                        new Option("Makes Decisions", true),
+                        new Option("Skips all instructions", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which control logic uses conditions to choose between actions?",
+                    Arrays.asList(
+                        new Option("Sequence Logic", false),
+                        new Option("Selection Logic", true),
+                        new Option("Iteration Logic", false),
+                        new Option("Parallel Logic", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the keyword used for a simple IF condition in java?",
+                    Arrays.asList(
+                        new Option("When", false),
+                        new Option("if", false),
+                        new Option("Then", true),
+                        new Option("case", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What type of selection structure has an if and else block?",
+                    Arrays.asList(
+                        new Option("Single alternatives", false),
+                        new Option("Double alternatives", true),
+                        new Option("Multiple Alternatives", false),
+                        new Option("Loop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What control structure uses else-if statements?",
+                    Arrays.asList(
+                        new Option("Single alternatives", false),
+                        new Option("Double alternatives", false),
+                        new Option("Multiple Alternatives", true),
+                        new Option("Loop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which keyword is used in a switch statement?",
+                    Arrays.asList(
+                        new Option("if", false),
+                        new Option("select", false),
+                        new Option("switch", true),
+                        new Option("choose", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is used to end each case in a switch block?",
+                    Arrays.asList(
+                        new Option("stop", false),
+                        new Option("end", false),
+                        new Option("exit", false),
+                        new Option("break", true)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What does a default block do in a switch?",
+                    Arrays.asList(
+                        new Option("Ends the program", false),
+                        new Option("Repeats the last case", false),
+                        new Option("Runs if no case matches", true),
+                        new Option("Skips all cases", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "How many times does a do... while loop execute at minimum?",
+                    Arrays.asList(
+                        new Option("0 times", false),
+                        new Option("1 times", true),
+                        new Option("2 times", false),
+                        new Option("infinite times", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Where is the condition tested in a while loop?",
+                    Arrays.asList(
+                        new Option("At the end", false),
+                        new Option("At the top", true),
+                        new Option("In the middle", false),
+                        new Option("after 1 iteration", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "which loop checks the condition after the loop body?",
+                    Arrays.asList(
+                        new Option("for loop", false),
+                        new Option("do while loop", false),
+                        new Option("while loop", true),
+                        new Option("switch loop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What are the three parts of a for loop?",
+                    Arrays.asList(
+                        new Option("int, test, finish", false),
+                        new Option("init, condition, increment", false),
+                        new Option("condition, loop, end", true),
+                        new Option("start, repeat, stop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What kind of loop is best when the number of repetions is known?",
+                    Arrays.asList(
+                        new Option("while loop", false),
+                        new Option("do...while loop",false),
+                        new Option("for loop", true),
+                        new Option("start, repeat, stop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which loop is best when you want to ensure the code runs at least once?",
+                    Arrays.asList(
+                        new Option("while loop", false),
+                        new Option("do...while loop",false),
+                        new Option("for loop", true),
+                        new Option("start, repeat, stop", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which loop continues while the condition is true?",
+                    Arrays.asList(
+                        new Option("do...while loop",false),
+                        new Option("if statement", false),
+                        new Option("switch", false),
+                        new Option("while loop", true)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What happens if the condition in a while loop is false at first?",
+                    Arrays.asList(
+                        new Option("the loop runs once",false),
+                        new Option("the loop doesn't run", true),
+                        new Option("the loop repeats", false),
+                        new Option("An error occurs", false)
+                        ),
+                    "easy"
+                ));
+                
+                easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the purpose of a loop?",
+                    Arrays.asList(
+                        new Option("To stop execution",false),
+                        new Option("To conditionally execute", false),
+                        new Option("To repeat code", true),
+                        new Option("To define classes", false)
+                        ),
+                    "easy"
+                ));
+ 
+                 mediumQuestion.add(new Question( 
+                    "Which control structure is most suitable for choosing one out of many option" ,
+                    Arrays.asList(
+                        new Option("for loop", false),
+                        new Option("while loop", true),
+                        new Option("if-else", false),
+                        new Option("switch", false)
                         ),
                     "medium"
-                ));  
+                )); 
+                                 
+                 mediumQuestion.add(new Question( 
+                    "In a for loop, where is the loop control variable usually updated" ,
+                    Arrays.asList(
+                        new Option("In the condition", false),
+                        new Option("In the body", true),
+                        new Option("In the Increment part", false),
+                        new Option("Outside the loop", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which loop is best for reading input until the user typs EXIT?" ,
+                    Arrays.asList(
+                        new Option("for loop", false),
+                        new Option("do...while loop", true),
+                        new Option("while loop", false),
+                        new Option("if-else", false)
+                        ),
+                    "medium"
+                )); 
+
+                 
+                 mediumQuestion.add(new Question( 
+                    "What happens if a break statement is missing in a switch case?" ,
+                    Arrays.asList(
+                        new Option("error", false),
+                        new Option("Only default will run", true),
+                        new Option("Fall-through to the next case", false),
+                        new Option("Program exits", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which loop will always execute at least once?" ,
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("for", true),
+                        new Option("do...while", false),
+                        new Option("switch", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which loop will always execute at least once?" ,
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("for", true),
+                        new Option("do...while", false),
+                        new Option("switch", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which part of the for loop is executed only once?" ,
+                    Arrays.asList(
+                        new Option("initialization", false),
+                        new Option("Condition", true),
+                        new Option("Body", false),
+                        new Option("Increment", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which of the following is a valid way to write a while loop?" ,
+                    Arrays.asList(
+                        new Option("while x > 5{}", false),
+                        new Option("while(x>5){}", true),
+                        new Option("whilex: {}", false),
+                        new Option("while > 5 (x)", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "What structure is ideal when checking multiple exact matches for a variable?" ,
+                    Arrays.asList(
+                        new Option("Nested if", false),
+                        new Option("while loop", true),
+                        new Option("switch", false),
+                        new Option("do..while loop", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "When is the condition in a do..while loop checked?" ,
+                    Arrays.asList(
+                        new Option("before the loop starts", false),
+                        new Option("In teh middle of the loop", true),
+                        new Option("After the loop runs once", false),
+                        new Option("Before an after each loop", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which of the following loops os best when the number of iterations is known beforehand?" ,
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("do...while", true),
+                        new Option("for", false),
+                        new Option("switch", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                 mediumQuestion.add(new Question( 
+                    "Which of the following is a valid switch syntax?" ,
+                    Arrays.asList(
+                        new Option("switch = x{}", false),
+                        new Option("switch (x) {case 1:...}", true),
+                        new Option("switch{x=1:...}", false),
+                        new Option("switch(x):{}", false)
+                        ),
+                    "medium"
+                )); 
             }
             default ->  System.out.println(" KUpal walang ganyan");
         }
