@@ -1041,6 +1041,646 @@ public class Questionnaire {
                         ),
                     "medium"
                 )); 
+                 
+                                 
+                hardQuestion.add(new Question( 
+                    "A vending machine program must decide what product to dispense base on the selected number. Which structure is most appropriate?",
+                    Arrays.asList(
+                        new Option("for loop", false),
+                        new Option("if-else-if",false),
+                        new Option("switch", true),
+                        new Option("do-while", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "You are programming a smart home system. The header should turn on if the temprature drops below 18C Which structure should be used?",
+                    Arrays.asList(
+                        new Option("switch", false),
+                        new Option("for",false),
+                        new Option("if", true),
+                        new Option("while", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "You are programming a smart home system. The header should turn on if the temprature drops below 18C Which structure should be used?",
+                    Arrays.asList(
+                        new Option("switch", false),
+                        new Option("for",false),
+                        new Option("if", true),
+                        new Option("while", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "You are programming a smart home system. The header should turn on if the temprature drops below 18C Which structure should be used?",
+                    Arrays.asList(
+                        new Option("switch", false),
+                        new Option("for",false),
+                        new Option("if", true),
+                        new Option("while", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "A student attendance system should allow checking students until the teacher enters DONE. What loop should be used?",
+                    Arrays.asList(
+                        new Option("for", false),
+                        new Option("do-while",false),
+                        new Option("while", true),
+                        new Option("switch", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "A program that calculates a monthly electricity bills for 100 houses a best written using which loop?",
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("for",false),
+                        new Option("switch", true),
+                        new Option("if", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "You need to ensure a login form is shown at least once before validationg credentials. What loop guarantess this?",
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("for",false),
+                        new Option("do-while", true),
+                        new Option("if", false)
+                        ),
+                    "hard"
+                ));
+                
+                hardQuestion.add(new Question( 
+                    "You are programming a traffic light system: green, yellow, red. Each state follows the other in order. Which structure is best?",
+                    Arrays.asList(
+                        new Option("switch", false),
+                        new Option("nested if",false),
+                        new Option("loop", true),
+                        new Option("recursive function", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "A coffee machine should keep asking for a valid selection untile one is made. Which is the best loop to use?",
+                    Arrays.asList(
+                        new Option("for", false),
+                        new Option("while",false),
+                        new Option("do-While", true),
+                        new Option("if-else", false)
+                        ),
+                    "hard"
+                ));
+                                
+                hardQuestion.add(new Question( 
+                    "A mobile app menu has 6 options. What is the most efficient way to check which button was clicked?",
+                    Arrays.asList(
+                        new Option("switch-case", true),
+                        new Option("if",false),
+                        new Option("while",false),
+                        new Option("for", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "In a quiz app, users must answer 10 questions. if the number is fixed, which loop is preffered?",
+                    Arrays.asList(
+                        new Option("while", false),
+                        new Option("do-while",false),
+                        new Option("for", true),
+                        new Option("switch", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "Which condition allows infinite execution of a while loop?",
+                    Arrays.asList(
+                        new Option("while(x == 5)", false),
+                        new Option("while(true)",false),
+                        new Option("while(x != 0)", true),
+                        new Option("while(x < 10)", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "you are writing a billing system where taxes depend on the type of item. Which control structure best handles this?",
+                    Arrays.asList(
+                        new Option("loop", false),
+                        new Option("if-else",false),
+                        new Option("switch", true),
+                        new Option("break", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "You need to validate from fields one by one until a valid entry is found. What's best?",
+                    Arrays.asList(
+                        new Option("for loop", false),
+                        new Option("while loop",false),
+                        new Option("if statement", true),
+                        new Option("do-while", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "Which is true about switch-case blocks in Java?",
+                    Arrays.asList(
+                        new Option("break is optional but prevents fall-through", false),
+                        new Option("Only numbers can be used in case",false),
+                        new Option("The default must always be last", true),
+                        new Option("You can't use -> in switch statements", false)
+                        ),
+                    "hard"
+                ));
+                
+                                
+                hardQuestion.add(new Question( 
+                    "In a password checker, the system should allow three attempts only. Which control structure is most appropriate?",
+                    Arrays.asList(
+                        new Option("while loop with counter", false),
+                        new Option("do-while loop without condition",false),
+                        new Option("switch statement", true),
+                        new Option("Nested if", false)
+                        ),
+                    "hard"
+                ));
+                                
+                hardQuestion.add(new Question( 
+                    "In which case would you use a nested if structure?",
+                    Arrays.asList(
+                        new Option("Comparing one variable to multiple values", false),
+                        new Option("Repeating a task multiple times",false),
+                        new Option("Checking multiple related conditions", true),
+                        new Option("Performing arithmetic operations", false)
+                        ),
+                    "hard"
+                ));
+               
+            }
+            case 3 ->{
+                
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the main purpose of a data structure?",
+                    Arrays.asList(
+                        new Option("To compile code", false),
+                        new Option("To store data efficiently", true),
+                        new Option("To display graphics", false),
+                        new Option("To manage memory leaks", false)
+                        ),
+                    "easy"
+                ));
+                
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following is a linear data structure?",
+                    Arrays.asList(
+                        new Option("Graph", false),
+                        new Option("Tree", false),
+                        new Option("Linked List", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "easy"
+                ));
+                          easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which data structure follows the Last in, First Out (LIFO) principle?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Queue", false),
+                        new Option("Stack", true),
+                        new Option("Graph", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which data structure follows the Last in, First Out (LIFO) principle?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Tree", false),
+                        new Option("Queue", true),
+                        new Option("Array", false)
+                        ),
+                    "easy"
+                ));
+                    
+                          easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is an array?",
+                    Arrays.asList(
+                        new Option("A set of unrelated data types", false),
+                        new Option("A variable that stores only characters", false),
+                        new Option("A fixe-sized collection of elements  of the same data type", true),
+                        new Option("A dynamic collection of variables", false)
+                        ),
+                    "easy"
+                ));
+                          
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which structure connects elements using pointers or links?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Stack", false),
+                        new Option("Linked List", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following is NOT a linear data structure?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Queue", false),
+                        new Option("Tree", true),
+                        new Option("Stack", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is a hash table used for?",
+                    Arrays.asList(
+                        new Option("Sorting elements", false),
+                        new Option("Fast data retrieval using keys", true),
+                        new Option("Displaying data", false),
+                        new Option("Traversing a tree", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which if the following structures is best for hiearchical relationships?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Tree", true),
+                        new Option("Graph", false),
+                        new Option("Queue", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What does the term 'node' typically refer to in data strutures?",
+                    Arrays.asList(
+                        new Option("A memory error", false),
+                        new Option("A compiler setting", false),
+                        new Option("An element in a data structure", true),
+                        new Option("A programming language", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which structure is ideal for modelling social network or road maps?",
+                    Arrays.asList(
+                        new Option("tree", false),
+                        new Option("Array", false),
+                        new Option("Hash Table", false),
+                        new Option("Graph", true)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "In  an array, elements are accesed using: ?",
+                    Arrays.asList(
+                        new Option("Keys", false),
+                        new Option("Links", false),
+                        new Option("Index", true),
+                        new Option("Nodes", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "which of the following structures uses a 'parent-child' relationship?",
+                    Arrays.asList(
+                        new Option("Linked List", false),
+                        new Option("Queue", false),
+                        new Option("Tree", true),
+                        new Option("Stack", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What does FIFO Stand for?",
+                    Arrays.asList(
+                        new Option("First on, First Out", true),
+                        new Option("Fast Input, Fast Output", false),
+                        new Option("Fixed Input, Fixed Output", false),
+                        new Option("Final In, Final Out", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which structure does not depend on order or position to access data?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Stack", false),
+                        new Option("Hash Table", true),
+                        new Option("Queue", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of these in a non-linear data structure?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Stack", false),
+                        new Option("Queue", false),
+                        new Option("Graph", true)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following allows only one end to insert and remove data?",
+                    Arrays.asList(
+                        new Option("Tree", false),
+                        new Option("Stack", true),
+                        new Option("Graph", false),
+                        new Option("Hash Table", false)
+                        ),
+                    "easy"
+                ));
+                 
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What kind of data structure is used in function call management (call stack)?",
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Array", false),
+                        new Option("Graph", false),
+                        new Option("Stack", true)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which structure is used when order matters and you want to process elements first inserted first?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue", true),
+                        new Option("tree", false),
+                        new Option("Graph", false)
+                        ),
+                    "easy"
+                ));
+                    
+                    easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which data structure is made up of nodes connected arbitrarily?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Linked List", false),
+                        new Option("Graph", true),
+                        new Option("Stack", false)
+                        ),
+                    "easy"
+                ));
+                               
+                 mediumQuestion.add(new Question( 
+                    "Which of the following best describes a linked list?" ,
+                    Arrays.asList(
+                        new Option("A fixed-size array of data elements", false),
+                        new Option("A collection of nodes connected by links", true),
+                        new Option("A hierarchical tree of data", false),
+                        new Option("A sequential list with random access", false)
+                        ),
+                    "medium"
+                )); 
+                 
+                            
+                 mediumQuestion.add(new Question( 
+                    "What is a key advantage of using a linked list over an array?" ,
+                    Arrays.asList(
+                        new Option("Faster indexing", false),
+                        new Option("Dynamic memory allocation", true),
+                        new Option("Less memory usage", false),
+                        new Option("Easier to sort", false)
+                        ),
+                    "medium"
+                )); 
+                            
+                 mediumQuestion.add(new Question( 
+                    "In a stack, if the last element inserted is X, what will be the first one to be removed?" ,
+                    Arrays.asList(
+                        new Option("The oldest element", false),
+                        new Option("X", true),
+                        new Option("A random element", false),
+                        new Option("Depends on sorting", false)
+                        ),
+                    "medium"
+                )); 
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which of the following data structures uses hashing to access data?" ,
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Stack", false),
+                        new Option("Tree", false),
+                        new Option("Hash Table", true)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "What is the maing disadvantage of an array?" ,
+                    Arrays.asList(
+                        new Option("Elements can't be accessed using index", false),
+                        new Option("It stores data in hierarchical form", false),
+                        new Option("Fixed size", true),
+                        new Option("It's slower than all other structures", false)
+                        ),
+                    "medium"
+                ));
+                 
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which operation is typically not efficeint in a singly linke list?" ,
+                    Arrays.asList(
+                        new Option("Insertion at head", false),
+                        new Option("Access by index", true),
+                        new Option("Deletion from front", false),
+                        new Option("Traversal", false)
+                        ),
+                    "medium"
+                ));
+                 
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which data structure allows insertion at on end and deletion at the other?" ,
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue", true),
+                        new Option("Array", false),
+                        new Option("Tree", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "What kind of data structure is best suited for implementing undo operations in text editors?" ,
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Graph", false),
+                        new Option("Stack", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "In a tree, what do we call a node with no children?" ,
+                    Arrays.asList(
+                        new Option("Parent", false),
+                        new Option("Leaf", true),
+                        new Option("Root", false),
+                        new Option("Internal node", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which of the following is true for a hash table?" ,
+                    Arrays.asList(
+                        new Option("It maintains element in sorted order", false),
+                        new Option("It uses a stack-based structure", false),
+                        new Option("It maps keys to values using hash functions", true),
+                        new Option("It is a type of tree", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which traversal technique is used in binary trees to visit all nodes in depth-first order?" ,
+                    Arrays.asList(
+                        new Option("Level-order", false),
+                        new Option("Breadth-first", false),
+                        new Option("Preorder/Inorder/Postorder", true),
+                        new Option("Random traversal", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which data structure is most appropriate for breadth-first search(BFS) in a graph?" ,
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue", true),
+                        new Option("Tree", false),
+                        new Option("Linked List", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "What type of data structure is a graph considered to be?" ,
+                    Arrays.asList(
+                        new Option("Linear", false),
+                        new Option("Sequential", false),
+                        new Option("Non-linear", true),
+                        new Option("Tree-based", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which of the following best describes a queue's access mode?" ,
+                    Arrays.asList(
+                        new Option("LIFO", false),
+                        new Option("FIFO", true),
+                        new Option("FILO", false),
+                        new Option("Random", false)
+                        ),
+                    "medium"
+                ));
+                                                
+                 mediumQuestion.add(new Question( 
+                    "Which of these can represent a network of roads between-cities?" ,
+                    Arrays.asList(
+                        new Option("Tree", false),
+                        new Option("Array", false),
+                        new Option("Graph", true),
+                        new Option("Stack", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "In an array of size 10, what is the index of the last element?" ,
+                    Arrays.asList(
+                        new Option("10", false),
+                        new Option("1", false),
+                        new Option("9", true),
+                        new Option("11", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "What is the role of a hash function in a hash table?" ,
+                    Arrays.asList(
+                        new Option("To sort values", false),
+                        new Option("To map a key to an index", true),
+                        new Option("To compare values", false),
+                        new Option("To generate random numbers", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "What does a node in a linked list typically contain?" ,
+                    Arrays.asList(
+                        new Option("Only data", false),
+                        new Option("Data and a link to the next node", true),
+                        new Option("Only the link", false),
+                        new Option("Data and an index", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "Which operation is more efficient in a stack than in a array?" ,
+                    Arrays.asList(
+                        new Option("Push and Pop", true),
+                        new Option("sorting", false),
+                        new Option("Random access", false),
+                        new Option("Indexing", false)
+                        ),
+                    "medium"
+                ));
+                                             
+                 mediumQuestion.add(new Question( 
+                    "In tree terminology, the topmost node is called?" ,
+                    Arrays.asList(
+                        new Option("Leaf", false),
+                        new Option("Root", true),
+                        new Option("Parent", false),
+                        new Option("Branch", false)
+                        ),
+                    "medium"
+                ));
             }
             default ->  System.out.println(" KUpal walang ganyan");
         }
