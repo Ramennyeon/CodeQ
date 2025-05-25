@@ -1681,7 +1681,871 @@ public class Questionnaire {
                         ),
                     "medium"
                 ));
+                 
+                                                 
+                hardQuestion.add(new Question( 
+                    "When designing a navigation system (e.g., Google Maps), which data structure would best represent road networks between cities?",
+                    Arrays.asList(
+                        new Option("Tree", false),
+                        new Option("Stack",false),
+                        new Option("Graph", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "hard"
+                ));
+                
+                                                
+                hardQuestion.add(new Question( 
+                    "Which data structure is most suitable for managing browser history, where the most recent page visited is the first to be removed on BACK button click?",
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Stack",true),
+                        new Option("Array", false),
+                        new Option("Graph", false)
+                        ),
+                    "hard"
+                ));
+                
+                                                
+                hardQuestion.add(new Question( 
+                    "In a music streaming app, which data structure is ideal for implementing a RECENTLY PLAYED song list where songs are accessed in the oreder they were played?",
+                    Arrays.asList(
+                        new Option("Queue", true),
+                        new Option("Stack",false),
+                        new Option("Tree", false),
+                        new Option("Hash Table", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "You are implementing an autocomplete feature (like in  Google Search). Which combination is most effective for storing prefixes of words for fast lookup?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Hash Table",false),
+                        new Option("Trie(Prefix tree)", true),
+                        new Option("Graphh", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "In a scheduling system wher tasks are assigne based on priority (e.g, hospital emergency room), which stucture wiuld be most suitvale?",
+                    Arrays.asList(
+                        new Option("stack", false),
+                        new Option("Priority Queue",true),
+                        new Option("Linked List", false),
+                        new Option("Tree", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "Which structure allows the most efficiently allocate and manage seat assignments (with fixed positions), which data structure would be best?",
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Hash Table",false),
+                        new Option("Graph", false),
+                        new Option("Stack", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "In an airline booking system, to efficiently allocat and manage seat assignments (with fixed positions), which data structure would be best?",
+                    Arrays.asList(
+                        new Option("2D Array", false),
+                        new Option("Stack",false),
+                        new Option("Graph", false),
+                        new Option("Linked List", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "Which data structure is most efficient for implementing a LEAST RECENTLY USED (LRU) cache in applications like operating systems or web browsers?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Hash map + doubly Linked List",false),
+                        new Option("Queue", true),
+                        new Option("Binary tree", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "A filt system hierarchal on a computer (with folders and sibfolders) is best represented by which structure?",
+                    Arrays.asList(
+                        new Option("Graph", false),
+                        new Option("Tree",false),
+                        new Option("Array", true),
+                        new Option("Queue", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "When designing a chatbot, to ensure the conversation context is preserved in order, which structure is ideal for storing messages chronologically?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue",false),
+                        new Option("Graph", true),
+                        new Option("Tree", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "In online ticket booking, where customers are served in the order of arrival, what is the best data structure?",
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Stack",false),
+                        new Option("Tree", true),
+                        new Option("Heap", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "Which data structure would be most efficient to detect cycles (e,g, deadlocks) in operating system process management?",
+                    Arrays.asList(
+                        new Option("Tree", false),
+                        new Option("Graph",false),
+                        new Option("Stack", true),
+                        new Option("Queue", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "To track dependencies among software packages before installation which data structure should be used?",
+                    Arrays.asList(
+                        new Option("Linked List", false),
+                        new Option("Stack",false),
+                        new Option("Directed Acyclic Graph", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "When implementing a real-time leadeboard (e.g., gaming app). what data structure helps to maintain sorted scores with frequent insertions and deletions?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Array",false),
+                        new Option("Balanced Binary Search Tree (like AVL or Red-Black Tree)", true),
+                        new Option("Hash Table", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "To efficently reverse the order of words in a sentence (e.g., in a text editor), which structure is most useful?",
+                    Arrays.asList(
+                        new Option("Queue", false),
+                        new Option("Stack",false),
+                        new Option("Tree", true),
+                        new Option("Graph", false)
+                        ),
+                    "hard"
+                ));
+                                             
+                hardQuestion.add(new Question( 
+                    "In a virtual memory system, to track and replace memory pages, which data structure is often combined with a hash  map for quick access and removal?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Doubly Linked List",false),
+                        new Option("Tree", true),
+                        new Option("Array", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "What structure should be used to model airline routes where flights can go back and forth between cities (bi-directional)  ?",
+                    Arrays.asList(
+                        new Option("Tree", false),
+                        new Option("Stack",false),
+                        new Option("Undirected Graph", true),
+                        new Option("Queue", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "Which of the following is best suited for modelling a FRIEND SUGGESTION system on social media based on mutual connections?",
+                    Arrays.asList(
+                        new Option("Array", false),
+                        new Option("Graph",false),
+                        new Option("Stack", true),
+                        new Option("Tree", false)
+                        ),
+                    "hard"
+                ));
+                                                
+                hardQuestion.add(new Question( 
+                    "If you were to simulate a call center system where the earliest customer is served first and new customer join the end, which data structure applies?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue",false),
+                        new Option("Graph", true),
+                        new Option("Tree", false)
+                        ),
+                    "hard"
+                ));
+                
+                
             }
+            case 4 -> {
+                                
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is an array?",
+                    Arrays.asList(
+                        new Option("A type of loop", false),
+                        new Option("A data structure that stores a fixed-size collection of elements", true),
+                        new Option("A programming error", false),
+                        new Option("A variable that stores strings only", false)
+                        ),
+                    "easy"
+                ));
+                      
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which type of elements can an array store?",
+                    Arrays.asList(
+                        new Option("Mixed types", false),
+                        new Option("Only Characters", true),
+                        new Option("Elements of the same type", false),
+                        new Option("Only integers", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "How are elements in an array accessed?",
+                    Arrays.asList(
+                        new Option("Random names", false),
+                        new Option("Hash keys", true),
+                        new Option("Index numbers", false),
+                        new Option("By searching manually", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Where is the first element of an array stored?",
+                    Arrays.asList(
+                        new Option("Last memory address", false),
+                        new Option("Lowest memory address", true),
+                        new Option("Midddle of memory", false),
+                        new Option("Random location", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the index of the first element in a Java array?",
+                    Arrays.asList(
+                        new Option("1", false),
+                        new Option("-1", true),
+                        new Option("0", false),
+                        new Option("10", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                   "What is the syntax to declare an array in Java?",
+                    Arrays.asList(
+                        new Option("array int[10];", false),
+                        new Option("Int array[10];", true),
+                        new Option("Int[] array = new intp[10];", false),
+                        new Option("array = new int;", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following is a valid array declaration in Java?",
+                    Arrays.asList(
+                        new Option("double balnce = {1,2,3};", false),
+                        new Option("double[] balance = new double[10];", true),
+                        new Option("new array double[10];", false),
+                        new Option("array double = new;", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What does a one-dimensional array represent?",
+                    Arrays.asList(
+                        new Option("A table", false),
+                        new Option("A triangle", true),
+                        new Option("A single row or line of elements", false),
+                        new Option("a network", false)
+                        ),
+                    "easy"
+                ));      
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of the following best describes a multi-dimensional array?",
+                    Arrays.asList(
+                        new Option("An array with only one index", false),
+                        new Option("A collection of strings", true),
+                        new Option("Arrays inside an array", false),
+                        new Option("An array with random values", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which is true about array memory layout?",
+                    Arrays.asList(
+                        new Option("Each element is in a separate block", false),
+                        new Option("All elements are stored in contiguous memory locations", true),
+                        new Option("Memory is assigned randomly", false),
+                        new Option("Each value is in a separate file", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "How many indices are needed for a two-dimensional array?",
+                    Arrays.asList(
+                        new Option("1", false),
+                        new Option("3", true),
+                        new Option("2", false),
+                        new Option("4", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which of these is an example of initializing an array with values?",
+                    Arrays.asList(
+                        new Option("new int[] = {1,2,3};", false),
+                        new Option("int[] nums = 1,2,3;", true),
+                        new Option("int[] nums = {1,2,3};", false),
+                        new Option("int nums = new array[3] ", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is the purpose of using arrays in programming?",
+                    Arrays.asList(
+                        new Option("To decorate code", false),
+                        new Option("To avoid using variables", true),
+                        new Option("To store multiple values efficiently", false),
+                        new Option("To make errors", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which array has more than one dimesnion?",
+                    Arrays.asList(
+                        new Option("int[] x = new int[5];", false),
+                        new Option("int[][] x = new int [3][3];", true),
+                        new Option("int x = {5};", false),
+                        new Option("array x;", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What will be the index of the last element in an array of size 10?",
+                    Arrays.asList(
+                        new Option("10", false),
+                        new Option("1", true),
+                        new Option("9", false),
+                        new Option("-1", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is required to access a specific value in an array?",
+                    Arrays.asList(
+                        new Option("A keyword", false),
+                        new Option("An index", true),
+                        new Option("A loop", false),
+                        new Option("A pointer", false)
+                        ),
+                    "easy"
+                ));
+                      
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "How do you access the second element of an array named numbers?",
+                    Arrays.asList(
+                        new Option("numbers(2)", false),
+                        new Option("numbers{2}", true),
+                        new Option("numbers[1]", false),
+                        new Option("numbers[2] ", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What does the following do: int[] nums = new int[5];?",
+                    Arrays.asList(
+                        new Option("Assigns 5 to nums", false),
+                        new Option("Creates an array of 5 integers", true),
+                        new Option("Adds 5 integers to nums", false),
+                        new Option("Creates a loop", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "Which statement is true about arrays in Java?",
+                    Arrays.asList(
+                        new Option("They can grow automatically", false),
+                        new Option("They store values randomly", true),
+                        new Option("Their size is fixed once declared", false),
+                        new Option("They can only store characters", false)
+                        ),
+                    "easy"
+                ));
+                            
+                      easyQuestion.add(new Question( //new as of 05-08-2025 / adds question with its 3 parameter
+                    "What is one benefit of using arrays?",
+                    Arrays.asList(
+                        new Option("reduce", false),
+                        new Option("Makes storing multiple values easier", true),
+                        new Option("Increases code size", false),
+                        new Option("Avoid using variables", false)
+                        ),
+                    "easy"
+                ));
+                                                                   
+                 mediumQuestion.add(new Question( 
+                    "Which of the following correctly creates an array of 10 doubles in Java?" ,
+                    Arrays.asList(
+                        new Option("double balance[10];", false),
+                        new Option("double balance = new double();", true),
+                        new Option("double[] balance = new double[10];", false),
+                        new Option("new double balance[10];", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What does the expression numbers[3] refer to?" ,
+                    Arrays.asList(
+                        new Option("The 4th element in the array", false),
+                        new Option("The element at index 3", true),
+                        new Option("The 3rd value in memory", false),
+                        new Option("An error", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "How are arrays stored in memory?" ,
+                    Arrays.asList(
+                        new Option("In separate memory blocks", false),
+                        new Option("In contiguous memory locations", true),
+                        new Option("Random memory addresses", false),
+                        new Option("Indexed by the OS", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What is teh output of this code? int[] nums = {2,4,6}; System.out.println(nums[1]);" ,
+                    Arrays.asList(
+                        new Option("2", false),
+                        new Option("4", true),
+                        new Option("6", false),
+                        new Option("1", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which of the following will cause an ArrayIndexOutOfBoundsException?" ,
+                    Arrays.asList(
+                        new Option("Accessing array[0]", false),
+                        new Option("Accessing array[array.length - 1]", true),
+                        new Option("Accessong array[array.length]", false),
+                        new Option("Initializing an array", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What happens when an array is declared but not initialized in Java?" ,
+                    Arrays.asList(
+                        new Option("It stores garbage values", false),
+                        new Option("It is null", true),
+                        new Option("It throws an error immediately", false),
+                        new Option("It stores 0  by default", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "How do you initialize a one dimensional array with specific values?" ,
+                    Arrays.asList(
+                        new Option("int arr = 1,2,3;", false),
+                        new Option("new int[] = {1,2,3};", true),
+                        new Option("int[] arr = {1,2,3};", false),
+                        new Option("int[] arr(3) = 1,2,3", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What is the default value of an int in a newly created Java array?" ,
+                    Arrays.asList(
+                        new Option("1", false),
+                        new Option("null", true),
+                        new Option("0", false),
+                        new Option("undefined", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which of the following best describes a two-dimensional array?" ,
+                    Arrays.asList(
+                        new Option("A single list of elements", false),
+                        new Option("A dynamic data structure", true),
+                        new Option("An array of arrays", false),
+                        new Option("A linked list", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which syntax correctly declares a 3x3 matrix in Java?" ,
+                    Arrays.asList(
+                        new Option("Int matrix(3)(3);", false),
+                        new Option("int[][] matrix = new int [3][3];", true),
+                        new Option("int matrix =[3][3];", false),
+                        new Option("int matrix = int[3][3]", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What happens when you try to access an index less than 0 in an array?" ,
+                    Arrays.asList(
+                        new Option("Java ignores it", false),
+                        new Option("Java throws an exception", true),
+                        new Option("It returns 0", false),
+                        new Option("It loops to the last value", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which is true about array length in Java?" ,
+                    Arrays.asList(
+                        new Option("It is dynamic", false),
+                        new Option("It is fixed after declaration", true),
+                        new Option("It depends on system memory", false),
+                        new Option("It can be changed with a method", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "How would you copy all elements from one array to another?" ,
+                    Arrays.asList(
+                        new Option("Use = operator", false),
+                        new Option("Call array.copy()", true),
+                        new Option("Use a loop or System.arraycopy()", false),
+                        new Option("Arrays are copied automatically", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which of these can best represent a table rows and columns in code?" ,
+                    Arrays.asList(
+                        new Option("1D array", false),
+                        new Option("2D array", true),
+                        new Option("Hash Table", false),
+                        new Option("Stack", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which access pattern is used in arrays?" ,
+                    Arrays.asList(
+                        new Option("LIFO", false),
+                        new Option("FIFO", true),
+                        new Option("Direct(random)access", false),
+                        new Option("Sequential only", false)
+                        ),
+                    "medium"
+                ));
+                 
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "If you declare int[][] matrix = new int [2][3]; how many elements are in the array?" ,
+                    Arrays.asList(
+                        new Option("2", false),
+                        new Option("3", true),
+                        new Option("6", false),
+                        new Option("5", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What does arr.length give you in Java?" ,
+                    Arrays.asList(
+                        new Option("Size of a string", false),
+                        new Option("Number of elements in the array", true),
+                        new Option("The last index", false),
+                        new Option("Total memory", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "Which of the following is not a valid array operation?" ,
+                    Arrays.asList(
+                        new Option("Traversal", false),
+                        new Option("Updating an element", true),
+                        new Option("Sorting", false),
+                        new Option("Adding elements beyond declared size", false)
+                        ),
+                    "medium"
+                ));
+                                                              
+                 mediumQuestion.add(new Question( 
+                    "What does the following code do? int[] scores = new int[5];"  ,
+                    Arrays.asList(
+                        new Option("Declares 5 variables", false),
+                        new Option("Creates an array of 5 integers with default values(0)", true),
+                        new Option("Creates a dynamic list", false),
+                        new Option("Fills array with user input", false)
+                        ),
+                    "medium"
+                ));
+                                                     
+                hardQuestion.add(new Question( 
+                    "What will be the result of trying to access arr[-1] in Java?",
+                    Arrays.asList(
+                        new Option("Returns the last element", false),
+                        new Option("Returns 0",false),
+                        new Option("Throws ArrayIndexOutOfBoundsException", true),
+                        new Option("Wraps around to the end", false)
+                        ),
+                    "hard"
+                ));
+                                                    
+                hardQuestion.add(new Question( 
+                    "Given int[] arr = new int[3]; arr[3] = 10; what happens?",
+                    Arrays.asList(
+                        new Option("Stack", false),
+                        new Option("Queue",false),
+                        new Option("Graph", true),
+                        new Option("Tree", false)
+                        ),
+                    "hard"
+                ));
+                                                    
+                hardQuestion.add(new Question( 
+                    "What does this code print? int[] arr = {10,20,30}; System.out.println(arr.length);",
+                    Arrays.asList(
+                        new Option("2", false),
+                        new Option("4",false),
+                        new Option("3", true),
+                        new Option("0", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "If you want to represent a chess board in code which data structure would you use?",
+                    Arrays.asList(
+                        new Option("1D array", false),
+                        new Option("2D array",false),
+                        new Option("Linked List", true),
+                        new Option("Stack", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "What is the main drawback of using arrays for dynamic data management(e.g,. user registration system)?",
+                    Arrays.asList(
+                        new Option("Arrays can't be sorted", false),
+                        new Option("Arrays don't store strings",false),
+                        new Option("Arrays have fixed size", true),
+                        new Option("Arrays are too slow", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "Which Java utility can be used to copy the contents of one array to another efficiently?",
+                    Arrays.asList(
+                        new Option("Arrays.fill()", false),
+                        new Option("System.arraycopy()",false),
+                        new Option("array.clone()", true),
+                        new Option("Math.copy()", false)
+                        ),
+                    "hard"
+                ));                                                    
+                hardQuestion.add(new Question( 
+                    "Which of the following can dynamically resize during execution?",
+                    Arrays.asList(
+                        new Option("int[] fixedArray = new int[5];", false),
+                        new Option("double[] values = {1,0,2,0}",false),
+                        new Option("ArrayList<Integer>", true),
+                        new Option("char[] name = new char[10]", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "Which concept allows multi-dimesional arrays to be stored in a flat memory structure?",
+                    Arrays.asList(
+                        new Option("Row-pointer compression", false),
+                        new Option("Row-major or column-major order",false),
+                        new Option("Linked memory allocation", true),
+                        new Option("Vertical memory layouy", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "What is output? int[] nums = {1,2,3}; nums[0] = nums[1]; System.out.println(nums[0])",
+                    Arrays.asList(
+                        new Option("1", false),
+                        new Option("2",false),
+                        new Option("3", true),
+                        new Option("0", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "What's the result of comparing two arrays using ==in Java?",
+                    Arrays.asList(
+                        new Option("Compares element values", false),
+                        new Option("Compares references (memory addresses)",false),
+                        new Option("Returens true if size matches", true),
+                        new Option("Compiles but always returns false", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "which of the following is a valid way to iterate through a 2D array?",
+                    Arrays.asList(
+                        new Option("Single loop", false),
+                        new Option("Nested loops",false),
+                        new Option("Recursion only", true),
+                        new Option("HashMap", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "If you initialize int[][] arr = new int[2][3];, how do you access the last element?" , 
+                    Arrays.asList(
+                        new Option("arr[3][2]", false),
+                        new Option("arr[2][3]",false),
+                        new Option("arr[1][2]", true),
+                        new Option("arr[2][1]", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "What's the output? int[] a = {1,2,3}; int[] b = a; b[1] = 99; System.out.println(a[1]);",
+                    Arrays.asList(
+                        new Option("2", false),
+                        new Option("99",false),
+                        new Option("0", true),
+                        new Option("Error", false)
+                        ),
+                    "hard"
+                ));                                                    
+                hardQuestion.add(new Question( 
+                    "Which method from java.util.Arrays is used to sort an array?",
+                    Arrays.asList(
+                        new Option("Array.sortArray()", false),
+                        new Option("Arrays.sort{}",false),
+                        new Option("sort()", true),
+                        new Option("Array.sortValues", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "How are multidimensional arrays stored in Java memory?",
+                    Arrays.asList(
+                        new Option("In one block like in C", false),
+                        new Option("As arrays of arrays (jagged arrays)",false),
+                        new Option("In a single linked list", true),
+                        new Option("As binary trees", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "if arr.length = 5, what is the highest valid index you can access?",
+                    Arrays.asList(
+                        new Option("5", false),
+                        new Option("6",false),
+                        new Option("4", true),
+                        new Option("-1", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "What best describes the structure of a three-dimensional array?",
+                    Arrays.asList(
+                        new Option("An array with three types", false),
+                        new Option("A flat array",false),
+                        new Option("An array of 2D arrays", true),
+                        new Option("A matrix", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "How would you describe int[][] scores = new int[3][];?",
+                    Arrays.asList(
+                        new Option("A fully defined 2D array", false),
+                        new Option("A 2D array with only the first dimension define",false),
+                        new Option("A syntax error", true),
+                        new Option("An unintialized array", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "If you want to prevent changes to an array, what should you do?",
+                    Arrays.asList(
+                        new Option("Use a final variable", false),
+                        new Option("Make a defensive copy of an the array",false),
+                        new Option("Use array.lock()", true),
+                        new Option("Declare with protected", false)
+                        ),
+                    "hard"
+                ));
+                                                                    
+                hardQuestion.add(new Question( 
+                    "Which real-life system could be modeled using a multi-dimensional array?",
+                    Arrays.asList(
+                        new Option("Login form", false),
+                        new Option("Seating chart in a theater",false),
+                        new Option("Stopwatch", true),
+                        new Option("Calculator", false)
+                        ),
+                    "hard"
+                ));
+            }
+            
             default ->  System.out.println(" KUpal walang ganyan");
         }
         
