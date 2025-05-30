@@ -13,7 +13,7 @@ public class CorePage extends javax.swing.JFrame {
    private Option selectedOption;
    private int currentQuestionIndex = 0; 
    private int lessonNumber;
-   private String[] health = {"Source Packages/code.img/5_hearts-removebg-preview.png/","Source Pakages/code.img/5_hearts-removebg-preview.png/"};
+   private String[] health = {"code.img/5_hearts-removebg-preview.png","code.img/4_hearts-removebg-preview.png"};
    private int healthIndex = 0;
    private String healthImagePath = health[healthIndex];
    
@@ -30,28 +30,23 @@ public class CorePage extends javax.swing.JFrame {
         QuestionList = Questionnaire.lessonQuestion(lessonNumber);
         updateScoreDisplay();
         loadQuestion(currentQuestionIndex);
-        updateQuestionDifficulty();
         
         jLabel3.setIcon(Icon);
-        
     }
       private void loadQuestion(int index) {
         if (index < 0 || index >= QuestionList.size()) { 
             endQuiz();
             return;
         }
-            
-           
-         
+        
             Question q = QuestionList.get(index); 
             lblQuestion.setText(q.getText());
             jBtOptionA.setText(q.getOptions().get(0).getText());
             jBtOptionB.setText(q.getOptions().get(1).getText());
             jBtOptionC.setText(q.getOptions().get(2).getText());
             jBtOptionD.setText(q.getOptions().get(3).getText());
-            selectedOption = null;
-            
-            
+            jLabel2.setText("Current Difficulty: " + q.getDifficulty());
+            selectedOption = null;  
         } 
 
         private void endQuiz() {
@@ -265,7 +260,6 @@ public class CorePage extends javax.swing.JFrame {
          currentQuestionIndex++;        
        
         updateScoreDisplay(); 
-        updateQuestionDifficulty();
 
     }//GEN-LAST:event_jBtSubmitActionPerformed
         
@@ -288,10 +282,6 @@ public class CorePage extends javax.swing.JFrame {
     private void updateScoreDisplay() {
         jlbScore.setText("Score: " + score); 
     }
-    
-    private void updateQuestionDifficulty(){ 
-     jLabel2.setText("The Difficulty of this Question is: " + Question.getDifficulty());
-}
    
 
     public static void main(String args[]) {
