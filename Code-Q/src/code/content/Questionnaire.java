@@ -6,12 +6,14 @@ import java.util.*;
 
 
 public class Questionnaire {
- 
+    
+    
     public static List<Question> lessonQuestion(int lessonNumber){
         List<Question> easyQuestion = new ArrayList<>();  
         List<Question> mediumQuestion = new ArrayList<>();  
         List<Question> hardQuestion = new ArrayList<>();  
    
+      
         switch(lessonNumber){
             case 1 -> {  
         

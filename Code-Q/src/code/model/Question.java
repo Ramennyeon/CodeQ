@@ -4,12 +4,12 @@ package code.model;
 import java.util.List;
 
 
+
 public class Question {
     
     private String text;
     private List<Option>options; 
-    private String difficulty; 
-
+    private static String difficulty;
     
     public Question(String text, List<Option> options, String difficulty){
         this.text = text; 
@@ -25,7 +25,11 @@ public class Question {
         return this.options;    
     }
     
-    public String getDifficulty() {
+    /**
+     *
+     * @return
+     */
+    public static String getDifficulty() {
         return difficulty;
     }
 

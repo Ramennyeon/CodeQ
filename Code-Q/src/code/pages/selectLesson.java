@@ -77,7 +77,7 @@ public class selectLesson extends javax.swing.JFrame {
         jlbCopyrightInfringement.setForeground(new java.awt.Color(255, 255, 255));
         jlbCopyrightInfringement.setText("©Copyright 2025 Sepsun | Code-Q");
         getContentPane().add(jlbCopyrightInfringement, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 590, -1, 20));
-        getContentPane().add(jlbBackgroundPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 620));
+        getContentPane().add(jlbBackgroundPhoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, -60, 1100, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
