@@ -13,13 +13,16 @@ public class CorePage extends javax.swing.JFrame {
    private Option selectedOption;
    private int currentQuestionIndex = 0; 
    private int lessonNumber;
-   private String[] health = {"code.img/5_hearts-removebg-preview.png","code.img/4_hearts-removebg-preview.png"};
+   private String[] health = {"picture#1","picture#2","picture#3","picture#4","picture#5"};
    private int healthIndex = 0;
    private String healthImagePath = health[healthIndex];
+   private boolean questionCorrect;
    
    public List<Question> QuestionList;
    ImageIcon Icon = new ImageIcon(healthImagePath);
 
+   
+   
    
     public CorePage(int lessonNumber) {
         initComponents();
@@ -46,6 +49,7 @@ public class CorePage extends javax.swing.JFrame {
             jBtOptionC.setText(q.getOptions().get(2).getText());
             jBtOptionD.setText(q.getOptions().get(3).getText());
             jLabel2.setText("Current Difficulty: " + q.getDifficulty());
+          
             selectedOption = null;  
         } 
 
@@ -57,6 +61,14 @@ public class CorePage extends javax.swing.JFrame {
             jBtOptionD.setEnabled(false);
             jBtSubmit.setEnabled(false);
         }
+       private void gameOver(){
+            lblQuestion.setText("Bobo mo kupal!"); 
+            jBtOptionA.setEnabled(false); 
+            jBtOptionB.setEnabled(false);
+            jBtOptionC.setEnabled(false);
+            jBtOptionD.setEnabled(false);
+            jBtSubmit.setEnabled(false);
+       }
 
 
 
@@ -243,24 +255,31 @@ public class CorePage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSubmitActionPerformed
-        if (selectedOption != null && selectedOption.isCorrect()) { 
-        Question currentQuestion = QuestionList.get(currentQuestionIndex);
-        jLabel1.setText("Health Remain");
-        score += currentQuestion.getPoints();
-        }
-        else{
-           healthIndex++;
-           jLabel1.setText("minusHealth");
-           jLabel3.setIcon(Icon);
+   
+        if (healthIndex == 4){
+            gameOver();
         }
         
+        else if (selectedOption != null && healthIndex < 4 && !selectedOption.isCorrect()) {
+            
+        currentQuestionIndex++;   
+        healthIndex++;
+        jLabel1.setText("minusHealth /Current Picture: " + health[healthIndex]);
+        jLabel3.setIcon(Icon);  
+           
+        }
+        else if (selectedOption.isCorrect()&& healthIndex < 4 ){
+            
+        currentQuestionIndex++;   
+        Question currentQuestion = QuestionList.get(currentQuestionIndex); 
+        jLabel1.setText("Health Remain");
+        score += currentQuestion.getPoints();
+        
+        }
+        
+         loadQuestion(currentQuestionIndex);       
+         updateScoreDisplay(); 
          
-         loadQuestion(currentQuestionIndex);
-         
-         currentQuestionIndex++;        
-       
-        updateScoreDisplay(); 
-
     }//GEN-LAST:event_jBtSubmitActionPerformed
         
     private void jBtOptionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtOptionBActionPerformed
@@ -282,8 +301,7 @@ public class CorePage extends javax.swing.JFrame {
     private void updateScoreDisplay() {
         jlbScore.setText("Score: " + score); 
     }
-   
-
+ 
     public static void main(String args[]) {
 
                /* Create and display the form */
