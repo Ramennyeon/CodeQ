@@ -13,18 +13,16 @@ public class CorePage extends javax.swing.JFrame {
    private Option selectedOption;
    private int currentQuestionIndex = 0; 
    private int lessonNumber;
-   private String[] health = {"picture#1","picture#2","picture#3","picture#4","picture#5"};
    private int healthIndex = 0;
-   private String healthImagePath = health[healthIndex];
-   private boolean questionCorrect;
-   
-   public List<Question> QuestionList;
-   ImageIcon Icon = new ImageIcon(healthImagePath);
 
    
-   
-   
+   public List<Question> QuestionList;
+   ImageIcon Icon1 = new ImageIcon("src/code/img/5_hearts-removebg-preview.png");
+   ImageIcon Icon2 = new ImageIcon("src/code/img/4_hearts-removebg-preview.png");
+
+    
     public CorePage(int lessonNumber) {
+        
         initComponents();
   
         setLocationRelativeTo(null);
@@ -34,8 +32,20 @@ public class CorePage extends javax.swing.JFrame {
         updateScoreDisplay();
         loadQuestion(currentQuestionIndex);
         
-        jLabel3.setIcon(Icon);
+        setHealth();
     }
+     private void setHealth(){
+        
+         switch(healthIndex){
+             case 0 -> {
+                 jLabel3.setIcon(Icon1);
+             }
+             case 1 -> {
+                 jLabel3.setIcon(Icon2);
+             }
+         }
+     }
+    
       private void loadQuestion(int index) {
         if (index < 0 || index >= QuestionList.size()) { 
             endQuiz();
@@ -249,7 +259,7 @@ public class CorePage extends javax.swing.JFrame {
         getContentPane().add(jlbPixelGirlIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 737, 140, -1));
 
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 670, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -261,11 +271,10 @@ public class CorePage extends javax.swing.JFrame {
         }
         
         else if (selectedOption != null && healthIndex < 4 && !selectedOption.isCorrect()) {
-            
-        currentQuestionIndex++;   
+        
         healthIndex++;
-        jLabel1.setText("minusHealth /Current Picture: " + health[healthIndex]);
-        jLabel3.setIcon(Icon);  
+        currentQuestionIndex++;
+        jLabel1.setText("minusHealth/Current Picture: " + healthIndex + " Current Index: " + healthIndex);
            
         }
         else if (selectedOption.isCorrect()&& healthIndex < 4 ){
@@ -277,6 +286,7 @@ public class CorePage extends javax.swing.JFrame {
         
         }
         
+         setHealth();
          loadQuestion(currentQuestionIndex);       
          updateScoreDisplay(); 
          
@@ -307,7 +317,7 @@ public class CorePage extends javax.swing.JFrame {
                /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-
+        
                             }
         });
     }
